@@ -1,4 +1,4 @@
-package Reverse_Linked_List_206;
+package Easy.Reverse_Linked_List_206;
 
 import HelperClasses.ListNode;
 

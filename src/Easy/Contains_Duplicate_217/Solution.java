@@ -1,4 +1,4 @@
-package Contains_Duplicate_217;
+package Easy.Contains_Duplicate_217;
 
 import java.util.HashMap;
 

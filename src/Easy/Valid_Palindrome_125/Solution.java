@@ -1,4 +1,4 @@
-package Valid_Palindrome_125;
+package Easy.Valid_Palindrome_125;
 
 class Solution {
     public boolean isPalindrome(String s) {

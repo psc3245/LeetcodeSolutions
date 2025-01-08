@@ -1,4 +1,4 @@
-package Merge_Sorted_Lists_21;
+package Easy.Merge_Sorted_Lists_21;
 
 import HelperClasses.ListNode;
 

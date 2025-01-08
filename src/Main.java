@@ -1,23 +1,16 @@
-import HelperClasses.ListNode;
-import Merge_Sorted_Lists_21.*;
+import Medium.Top_K_Freq_Elem_347.Solution;
 
 public class Main {
     public static void main(String[] args) {
-        ListNode list1 = new ListNode(1);
-        list1.next = new ListNode(2);
-        list1.next.next = new ListNode(4);
 
-        ListNode list2 = new ListNode(1);
-        list2.next = new ListNode(3);
-        list2.next.next = new ListNode(5);
+        int[] case1 = {1,1,1,2,2,3};
+        int[] sol = Solution.topKFrequent(case1, 2);
 
-        ListNode head = Solution.mergeTwoLists(list1, list2);
+        int[] case2 = {7, 7, 6};
+        sol = Solution.topKFrequent(case2, 2);
 
-        while (head != null) {
-            System.out.print(head.val + ", ");
-            head = head.next;
-        }
-
+        int[] case3 = {1};
+        sol = Solution.topKFrequent(case3, 2);
     }
 
 
