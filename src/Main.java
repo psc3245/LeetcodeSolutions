@@ -1,18 +1,33 @@
-import Medium.K_Closest_Points_973.Solution;
+import HelperClasses.ListNode;
+import HelperClasses.TreeNode;
+import Medium.Add_Two_Numbers_2.Solution;
+
 
 public class Main {
     public static void main(String[] args) {
-        int[][] case1 = { {0, 2}, {2, 0}, {2, 2} };
-        int[][] sol1 = Solution.kClosest(case1, 2);
-        System.out.println("Case 1: ");
-        for (int[] arr : sol1) System.out.println(arr[0] + ", " + arr[1]);
 
-        int[][] case2 = { {2, 3}, {0, 2}, {2, 2} };
-        int[][] sol2 = Solution.kClosest(case2, 1);
-        System.out.println("Case 2: ");
-        for (int[] arr : sol2) System.out.println(arr[0] + ", " + arr[1]);
+        ListNode l1 = new ListNode(9);
+        l1.next = new ListNode(9);
+        l1.next.next = new ListNode(9);
+        l1.next.next.next = new ListNode(9);
+        l1.next.next.next.next = new ListNode(9);
+        l1.next.next.next.next.next = new ListNode(9);
+        l1.next.next.next.next.next.next = new ListNode(9);
 
+        ListNode l2 = new ListNode(9);
+        l2.next = new ListNode(9);
+        l2.next.next = new ListNode(9);
+        l2.next.next.next = new ListNode(9);
 
+        Solution.addTwoNumbers(l1, l2);
+//        TreeNode root = new TreeNode(2);
+//        root.left = new TreeNode(1);
+//        root.right = new TreeNode(1);
+//        root.left.left = new TreeNode(5);
+//        root.right.left = new TreeNode(1);
+//        root.right.right = new TreeNode(5);
+//        int a = Solution.goodNodesv1(root);
+//        System.out.println(a);
     }
 
 }
