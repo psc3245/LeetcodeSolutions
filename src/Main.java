@@ -1,19 +1,26 @@
 import HelperClasses.ListNode;
 import HelperClasses.TreeNode;
-import Hard.Trapping_Rain_Water_42.Solution;
+import Medium.Valid_Sudoku_36.Solution;
 
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {0,2,0,3,1,0,1,3,2,1}; // expected 9
-        System.out.println(Solution.trap(arr));
-        int[] arr2 = {0,1,0,2,1,0,1,3,2,1,2,1}; //expected 6
-        System.out.println(Solution.trap(arr2));
-        int[] arr3 = {4,2,0,3,2,5}; // expected 9
-        System.out.println(Solution.trap(arr3));
-        int[] arr4 = {4,2,3}; // expected 1
-        System.out.println(Solution.trap(arr4));
+        Solution solution = new Solution();
+
+        // Invalid case 4: Failing test case
+        char[][] invalidBoard4 = {
+                {'1', '2', '.', '.', '3', '.', '.', '.', '.'},
+                {'4', '.', '.', '5', '.', '.', '.', '.', '.'},
+                {'.', '9', '1', '.', '.', '.', '.', '.', '3'},
+                {'5', '.', '.', '.', '6', '.', '.', '.', '4'},
+                {'.', '.', '.', '8', '.', '3', '.', '.', '5'},
+                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                {'.', '.', '.', '.', '.', '.', '2', '.', '.'},
+                {'.', '.', '.', '4', '1', '9', '.', '.', '8'},
+                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
+        System.out.println("Test 6 (Invalid - Failing case) - Expected: false, Result: " + solution.isValidSudoku(invalidBoard4));
+
 
     }
-
 }
